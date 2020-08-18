@@ -27,7 +27,7 @@ while (vid_cap.isOpened()):
                 cv.putText(frame , "Drowsiness Aleart!" , (100,100),font ,1,(0,0,255),1,cv.LINE_AA)
                 ws.Beep(1000,500)
         else:
-            no_loops = 0
+            no_frames = 0
         
         for (x1,y1,w1,h1) in eyes:
             cv.rectangle(face_BGR ,(x1,y1),(x1+w1,y1+h1),(0,0,255),2)
